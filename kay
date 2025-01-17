@@ -105,7 +105,7 @@ Key.Parent = key
 Key.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Key.BorderColor3 = Color3.fromRGB(65, 65, 65)
 Key.BorderSizePixel = 0
-Key.Position = UDim2.new(0.319253057, 0, 0.324111879, 0)
+Key.Position = UDim2.new(0.319001734, 0, 0.411495119, 0)
 Key.Size = UDim2.new(0, 200, 0, 50)
 Key.Font = Enum.Font.SourceSans
 Key.PlaceholderColor3 = Color3.fromRGB(198, 198, 198)
@@ -120,7 +120,7 @@ UICorner_3.Parent = Key
 
 -- Scripts:
 
-local function EEUZKWD_fake_script() -- Explorer.LocalScript 
+local function LKOQV_fake_script() -- Explorer.LocalScript 
 	local script = Instance.new('LocalScript', Explorer)
 
 	-- initial states
@@ -2069,8 +2069,8 @@ local function EEUZKWD_fake_script() -- Explorer.LocalScript
 	end
 	
 end
-coroutine.wrap(EEUZKWD_fake_script)()
-local function OBULIJ_fake_script() -- Main.DraggableGUI 
+coroutine.wrap(LKOQV_fake_script)()
+local function TVQLDAQ_fake_script() -- Main.DraggableGUI 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -2108,24 +2108,24 @@ local function OBULIJ_fake_script() -- Main.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(OBULIJ_fake_script)()
-local function RRFJL_fake_script() -- Clear.LocalScript 
+coroutine.wrap(TVQLDAQ_fake_script)()
+local function IZDS_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Source.Text = ''
 	end)
 end
-coroutine.wrap(RRFJL_fake_script)()
-local function QEDUZ_fake_script() -- Execute.LocalScript 
+coroutine.wrap(IZDS_fake_script)()
+local function AKBYE_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.Source.Text)()
 	end)
 end
-coroutine.wrap(QEDUZ_fake_script)()
-local function XVXHADP_fake_script() -- key.DraggableGUI 
+coroutine.wrap(AKBYE_fake_script)()
+local function NEIJOH_fake_script() -- key.DraggableGUI 
 	local script = Instance.new('LocalScript', key)
 
 	local UIS = game:GetService('UserInputService')
@@ -2163,11 +2163,11 @@ local function XVXHADP_fake_script() -- key.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(XVXHADP_fake_script)()
-local function FNUHKXX_fake_script() -- key.CheckTextBoxText 
+coroutine.wrap(NEIJOH_fake_script)()
+local function FLRMZ_fake_script() -- key.CheckTextBoxText 
 	local script = Instance.new('LocalScript', key)
 
-	local textBox = script.Parent:FindFirstChild("exucut") -- Adjust the path to the TextBox as needed
+	local textBox = script.Parent:FindFirstChild("Key") -- Adjust the path to the TextBox as needed
 	local targetWord = "L9gdpWQuzh15075aGZO3e" -- Replace with the word you want to check
 	
 	while true do
@@ -2176,7 +2176,7 @@ local function FNUHKXX_fake_script() -- key.CheckTextBoxText
 			-- Path to the frame
 			local player = game.Players.LocalPlayer
 			local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("gayai")
-			local frame = screenGui:WaitForChild("Drag")
+			local frame = screenGui:WaitForChild("Main")
 	
 			-- Function to make the frame visible
 			local function showFrame()
@@ -2191,7 +2191,7 @@ local function FNUHKXX_fake_script() -- key.CheckTextBoxText
 			-- Path to the frame
 			local player = game.Players.LocalPlayer
 			local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("gayai")
-			local frame = screenGui:WaitForChild("KeyForExecute")
+			local frame = screenGui:WaitForChild("key")
 	
 			-- Function to make the frame visible
 			local function showgyat()
@@ -2211,4 +2211,4 @@ local function FNUHKXX_fake_script() -- key.CheckTextBoxText
 	
 	
 end
-coroutine.wrap(FNUHKXX_fake_script)()
+coroutine.wrap(FLRMZ_fake_script)()
