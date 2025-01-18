@@ -4,81 +4,26 @@
 -- Instances:
 
 local gayai = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local Explorer = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local Source = Instance.new("TextBox")
-local Clear = Instance.new("ImageButton")
-local Execute = Instance.new("ImageButton")
 local key = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Key = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local Main = Instance.new("Frame")
+local Explorer = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local noclip = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local esp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
 
 --Properties:
 
 gayai.Name = "gayai"
 gayai.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 gayai.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Main.Name = "Main"
-Main.Parent = gayai
-Main.BackgroundColor3 = Color3.fromRGB(40, 43, 53)
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.305743277, 0, 0.137000412, 0)
-Main.Size = UDim2.new(0, 860, 0, 528)
-Main.Visible = false
-
-UICorner.CornerRadius = UDim.new(0, 9)
-UICorner.Parent = Main
-
-Explorer.Name = "Explorer"
-Explorer.Parent = Main
-Explorer.BackgroundColor3 = Color3.fromRGB(29, 32, 39)
-Explorer.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Explorer.BorderSizePixel = 0
-Explorer.Position = UDim2.new(0.727279007, 0, 0.037309356, 0)
-Explorer.Size = UDim2.new(0, 217, 0, 489)
-
-UICorner_2.CornerRadius = UDim.new(0, 9)
-UICorner_2.Parent = Explorer
-
-Source.Name = "Source"
-Source.Parent = Main
-Source.BackgroundColor3 = Color3.fromRGB(33, 36, 44)
-Source.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Source.BorderSizePixel = 0
-Source.Position = UDim2.new(0.0928452611, 0, 0.106095284, 0)
-Source.Size = UDim2.new(0, 503, 0, 323)
-Source.Font = Enum.Font.SourceSans
-Source.Text = ""
-Source.TextColor3 = Color3.fromRGB(255, 255, 255)
-Source.TextSize = 35.000
-Source.TextWrapped = true
-Source.TextXAlignment = Enum.TextXAlignment.Left
-Source.TextYAlignment = Enum.TextYAlignment.Top
-
-Clear.Name = "Clear"
-Clear.Parent = Main
-Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Clear.BackgroundTransparency = 1.000
-Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.193238646, 0, 0.795045555, 0)
-Clear.Size = UDim2.new(0, 65, 0, 62)
-Clear.Image = "rbxassetid://74207898580673"
-
-Execute.Name = "Execute"
-Execute.Parent = Main
-Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Execute.BackgroundTransparency = 1.000
-Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute.BorderSizePixel = 0
-Execute.Position = UDim2.new(0.103143953, 0, 0.795575321, 0)
-Execute.Size = UDim2.new(0, 65, 0, 62)
-Execute.Image = "rbxassetid://96310712325604"
 
 key.Name = "key"
 key.Parent = gayai
@@ -116,11 +61,170 @@ Key.TextScaled = true
 Key.TextSize = 14.000
 Key.TextWrapped = true
 
-UICorner_3.Parent = Key
+UICorner.Parent = Key
+
+Main.Name = "Main"
+Main.Parent = gayai
+Main.BackgroundColor3 = Color3.fromRGB(42, 47, 57)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.32846716, 0, 0.21296297, 0)
+Main.Size = UDim2.new(0, 655, 0, 392)
+Main.Visible = false
+
+Explorer.Name = "Explorer"
+Explorer.Parent = Main
+Explorer.BackgroundColor3 = Color3.fromRGB(29, 32, 39)
+Explorer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Explorer.BorderSizePixel = 0
+Explorer.Position = UDim2.new(0.727278888, 0, 0.0373092964, 0)
+Explorer.Size = UDim2.new(0, 169, 0, 363)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Explorer
+
+ScrollingFrame.Parent = Main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(49, 54, 66)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.077862598, 0, 0.127551019, 0)
+ScrollingFrame.Size = UDim2.new(0, 401, 0, 296)
+
+noclip.Name = "noclip"
+noclip.Parent = ScrollingFrame
+noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0.0436622053, 0, 0.0888569802, 0)
+noclip.Size = UDim2.new(0, 108, 0, 34)
+noclip.Font = Enum.Font.Arcade
+noclip.Text = "Noclip:off"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextScaled = true
+noclip.TextSize = 14.000
+noclip.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(1, 0)
+UICorner_3.Parent = noclip
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 34, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(49, 49, 49))}
+UIGradient.Parent = noclip
+
+esp.Name = "esp"
+esp.Parent = ScrollingFrame
+esp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0.0442131981, 0, 0.0239336174, 0)
+esp.Size = UDim2.new(0, 108, 0, 34)
+esp.Font = Enum.Font.Arcade
+esp.Text = "Enable ESP"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = esp
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 34, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(49, 49, 49))}
+UIGradient_2.Parent = esp
 
 -- Scripts:
 
-local function LKOQV_fake_script() -- Explorer.LocalScript 
+local function NWPSX_fake_script() -- key.DraggableGUI 
+	local script = Instance.new('LocalScript', key)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(NWPSX_fake_script)()
+local function AAHEFI_fake_script() -- key.CheckTextBoxText 
+	local script = Instance.new('LocalScript', key)
+
+	local textBox = script.Parent:FindFirstChild("Key") -- Adjust the path to the TextBox as needed
+	local targetWord = "L9gdpWQuzh15075aGZO3e" -- Replace with the word you want to check
+	
+	while true do
+	    if textBox.Text == targetWord then
+			
+			-- Path to the frame
+			local player = game.Players.LocalPlayer
+			local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("gayai")
+			local frame = screenGui:WaitForChild("Main")
+	
+			-- Function to make the frame visible
+			local function showFrame()
+				frame.Visible = true
+			end
+	          
+			-- Example: Trigger the function after 2 seconds
+			wait(0.1)
+			showFrame()
+	
+	        
+			-- Path to the frame
+			local player = game.Players.LocalPlayer
+			local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("gayai")
+			local frame = screenGui:WaitForChild("key")
+	
+			-- Function to make the frame visible
+			local function showgyat()
+				frame.Visible = false
+			end
+			
+			local function showgyat1()
+				frame.text = hello
+			end
+	
+			-- Example: Trigger the function after 2 seconds
+			wait(0.1)
+			showgyat()
+			
+			showgyat1()
+	       
+	
+	    else
+	        print("The text does not match.")
+	    end
+	    task.wait(1) -- Check every second
+	end
+	
+	
+end
+coroutine.wrap(AAHEFI_fake_script)()
+local function FJWVFB_fake_script() -- Explorer.LocalScript 
 	local script = Instance.new('LocalScript', Explorer)
 
 	-- initial states
@@ -2069,8 +2173,278 @@ local function LKOQV_fake_script() -- Explorer.LocalScript
 	end
 	
 end
-coroutine.wrap(LKOQV_fake_script)()
-local function TVQLDAQ_fake_script() -- Main.DraggableGUI 
+coroutine.wrap(FJWVFB_fake_script)()
+local function QCAHA_fake_script() -- noclip.LocalScript 
+	local script = Instance.new('LocalScript', noclip)
+
+	local button = script.Parent -- Reference to the TextButton
+	local isGyat = false -- Toggle state
+	local isCollisionsDisabled = false -- Tracks if collisions are currently disabled
+	
+	-- Define the ground parts manually or dynamically
+	local groundParts = {} -- Store ground parts here
+	
+	-- Function to populate ground parts dynamically
+	local function findGroundParts()
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") and descendant.Position.Y <= 0 then
+				table.insert(groundParts, descendant)
+			end
+		end
+	end
+	
+	-- Function to disable collisions, excluding ground
+	local function disableCollisions()
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				if not table.find(groundParts, descendant) then
+					descendant.CanCollide = false
+				end
+			end
+		end
+		isCollisionsDisabled = true
+	end
+	
+	-- Function to enable collisions
+	local function enableCollisions()
+		for _, descendant in pairs(workspace:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				descendant.CanCollide = true
+			end
+		end
+		isCollisionsDisabled = false
+	end
+	
+	-- Function to toggle button text
+	local function toggleButtonText()
+		if isGyat then
+			button.Text = "Noclip:off"
+		else
+			button.Text = "Noclip:on"
+		end
+		isGyat = not isGyat -- Flip the toggle state
+	end
+	
+	-- Connect button click to the function
+	button.MouseButton1Click:Connect(function()
+		if #groundParts == 0 then
+			findGroundParts() -- Populate ground parts if not already found
+		end
+	
+		if isCollisionsDisabled then
+			enableCollisions()
+			print("HAHA EXLOITER HAHAHAHAHA")
+		else
+			disableCollisions()
+			print("HAHA EXLOITER HAHAHAHAHA")
+		end
+	
+		toggleButtonText()
+	end)
+	
+end
+coroutine.wrap(QCAHA_fake_script)()
+local function HAALZCF_fake_script() -- noclip.Animated script 
+	local script = Instance.new('LocalScript', noclip)
+
+	-- References
+	local button = script.Parent -- The GUI button
+	
+	-- Original properties
+	local originalSize = button.Size
+	local originalPosition = button.Position
+	local originalColor = button.BackgroundColor3
+	
+	-- Hover adjustments
+	local hoverSize = UDim2.new(0, 123, 0, 38) -- Explicit hover size
+	local hoverPosition = UDim2.new(0.024, 0,0.091, 0) -- Explicit hover position
+	local hoverColor = Color3.new(0, 1, 0) -- Green
+	
+	-- Hover functions
+	local function onHover()
+		button:TweenSizeAndPosition(
+			hoverSize, 
+			hoverPosition, 
+			Enum.EasingDirection.Out, 
+			Enum.EasingStyle.Quad, 
+			0.2, 
+			true
+		)
+		button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onLeave()
+		button:TweenSizeAndPosition(
+			originalSize, 
+			originalPosition, 
+			Enum.EasingDirection.Out, 
+			Enum.EasingStyle.Quad, 
+			0.2, 
+			true
+		)
+		button.BackgroundColor3 = originalColor
+	end
+	
+	-- Connect events
+	button.MouseEnter:Connect(onHover)
+	button.MouseLeave:Connect(onLeave)
+	
+end
+coroutine.wrap(HAALZCF_fake_script)()
+local function DYFZ_fake_script() -- esp.LocalScript 
+	local script = Instance.new('LocalScript', esp)
+
+	local button = script.Parent
+	local espActive = false -- Tracks whether ESP is active
+	local updateInterval = 0.5 -- Interval in seconds for updating ESP
+	
+	-- Function to create ESP for a target object
+	local function createESP(target, color)
+		if not target:FindFirstChild("ESPHighlight") then
+			local highlight = Instance.new("Highlight")
+			highlight.Name = "ESPHighlight"
+			highlight.Parent = target
+			highlight.FillColor = color or Color3.fromRGB(255, 255, 255) -- Default to green
+			highlight.OutlineColor = Color3.fromRGB(255, 0, 4) -- White outline
+			highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		end
+	
+		if not target:FindFirstChild("ESPBillboard") then
+			local billboard = Instance.new("BillboardGui")
+			billboard.Name = "ESPBillboard"
+			billboard.Parent = target
+			billboard.Adornee = target:FindFirstChild("HumanoidRootPart") or target.PrimaryPart
+			billboard.Size = UDim2.new(0, 200, 0, 50)
+			billboard.StudsOffset = Vector3.new(0, 3, 0)
+			billboard.AlwaysOnTop = true
+	
+			local textLabel = Instance.new("TextLabel")
+			textLabel.Parent = billboard
+			textLabel.Size = UDim2.new(1, 0, 1, 0)
+			textLabel.BackgroundTransparency = 1
+			textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			textLabel.TextStrokeTransparency = 0
+			textLabel.TextScaled = true
+	
+			local humanoid = target:FindFirstChild("Humanoid")
+			if humanoid then
+				textLabel.Text = target.Name .. " | Health: " .. math.floor(humanoid.Health) .. "/" .. math.floor(humanoid.MaxHealth)
+	
+				-- Update health dynamically
+				humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+					textLabel.Text = target.Name .. " | Health: " .. math.floor(humanoid.Health) .. "/" .. math.floor(humanoid.MaxHealth)
+				end)
+			end
+		end
+	end
+	
+	-- Function to remove ESP from a target object
+	local function removeESP(target)
+		local espHighlight = target:FindFirstChild("ESPHighlight")
+		if espHighlight then
+			espHighlight:Destroy()
+		end
+	
+		local espBillboard = target:FindFirstChild("ESPBillboard")
+		if espBillboard then
+			espBillboard:Destroy()
+		end
+	end
+	
+	-- Function to update ESP continuously
+	local function updateESP()
+		while espActive do
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local rootPart = character:FindFirstChild("HumanoidRootPart")
+	
+			if rootPart then
+				for _, entity in pairs(workspace:GetDescendants()) do
+					if entity:IsA("Model") and entity:FindFirstChild("Humanoid") then
+						local targetRoot = entity:FindFirstChild("HumanoidRootPart") or entity.PrimaryPart
+						if targetRoot and (targetRoot.Position - rootPart.Position).Magnitude <= 300 then
+							createESP(entity, Color3.fromRGB(255, 255, 0)) -- Green for humanoids
+						else
+							removeESP(entity) -- Remove ESP for entities outside the radius
+						end
+					end
+				end
+			end
+	
+			wait(updateInterval)
+		end
+	
+		-- Remove all ESP when deactivated
+		for _, entity in pairs(workspace:GetDescendants()) do
+			if entity:IsA("Model") and entity:FindFirstChild("Humanoid") then
+				removeESP(entity)
+			end
+		end
+	end
+	
+	-- Function to toggle ESP
+	local function toggleESP()
+		espActive = not espActive
+		button.Text = espActive and "Disable ESP" or "Enable ESP"
+	
+		if espActive then
+			coroutine.wrap(updateESP)()
+		end
+	end
+	
+	-- Listen for button click
+	button.MouseButton1Click:Connect(toggleESP)
+	
+end
+coroutine.wrap(DYFZ_fake_script)()
+local function YZQSVYA_fake_script() -- esp.Animated script 
+	local script = Instance.new('LocalScript', esp)
+
+	-- References
+	local button = script.Parent -- The GUI button
+	
+	-- Original properties
+	local originalSize = button.Size
+	local originalPosition = button.Position
+	local originalColor = button.BackgroundColor3
+	
+	-- Hover adjustments
+	local hoverSize = UDim2.new(0, 123, 0, 38) -- Explicit hover size
+	local hoverPosition = UDim2.new(0.027, 0, 0.029, 0) -- Explicit hover position
+	local hoverColor = Color3.new(0, 1, 0) -- Green
+	
+	-- Hover functions
+	local function onHover()
+		button:TweenSizeAndPosition(
+			hoverSize, 
+			hoverPosition, 
+			Enum.EasingDirection.Out, 
+			Enum.EasingStyle.Quad, 
+			0.2, 
+			true
+		)
+		button.BackgroundColor3 = hoverColor
+	end
+	
+	local function onLeave()
+		button:TweenSizeAndPosition(
+			originalSize, 
+			originalPosition, 
+			Enum.EasingDirection.Out, 
+			Enum.EasingStyle.Quad, 
+			0.2, 
+			true
+		)
+		button.BackgroundColor3 = originalColor
+	end
+	
+	-- Connect events
+	button.MouseEnter:Connect(onHover)
+	button.MouseLeave:Connect(onLeave)
+	
+end
+coroutine.wrap(YZQSVYA_fake_script)()
+local function BWHZMO_fake_script() -- Main.DraggableGUI 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -2108,107 +2482,29 @@ local function TVQLDAQ_fake_script() -- Main.DraggableGUI
 		end
 	end)
 end
-coroutine.wrap(TVQLDAQ_fake_script)()
-local function IZDS_fake_script() -- Clear.LocalScript 
-	local script = Instance.new('LocalScript', Clear)
+coroutine.wrap(BWHZMO_fake_script)()
+local function TBFE_fake_script() -- gayai.LocalScript 
+	local script = Instance.new('LocalScript', gayai)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Source.Text = ''
-	end)
-end
-coroutine.wrap(IZDS_fake_script)()
-local function AKBYE_fake_script() -- Execute.LocalScript 
-	local script = Instance.new('LocalScript', Execute)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(script.Parent.Parent.Source.Text)()
-	end)
-end
-coroutine.wrap(AKBYE_fake_script)()
-local function NEIJOH_fake_script() -- key.DraggableGUI 
-	local script = Instance.new('LocalScript', key)
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0
-	local dragStart = nil
-	local startPos = nil
+	local UserInputService = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local playerGui = player:WaitForChild("PlayerGui")
+	local mainFrame = playerGui:WaitForChild("Main") -- Change this path if the frame is nested in ScreenGui
 	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	-- Ensure the frame is initially hidden
+	mainFrame.Visible = false
+	
+	-- Toggle visibility when Right Shift is pressed
+	local function onInputBegan(input, isProcessed)
+		if isProcessed then return end
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			mainFrame.Visible = not mainFrame.Visible
+		end
 	end
 	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
+	-- Connect the event
+	UserInputService.InputBegan:Connect(onInputBegan)
 	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
 end
-coroutine.wrap(NEIJOH_fake_script)()
-local function FLRMZ_fake_script() -- key.CheckTextBoxText 
-	local script = Instance.new('LocalScript', key)
+coroutine.wrap(TBFE_fake_script)()
 
-	local textBox = script.Parent:FindFirstChild("Key") -- Adjust the path to the TextBox as needed
-	local targetWord = "L9gdpWQuzh15075aGZO3e" -- Replace with the word you want to check
-	
-	while true do
-	    if textBox.Text == targetWord then
-			
-			-- Path to the frame
-			local player = game.Players.LocalPlayer
-			local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("gayai")
-			local frame = screenGui:WaitForChild("Main")
-	
-			-- Function to make the frame visible
-			local function showFrame()
-				frame.Visible = true
-			end
-	
-			-- Example: Trigger the function after 2 seconds
-			wait(0.1)
-			showFrame()
-	
-	        
-			-- Path to the frame
-			local player = game.Players.LocalPlayer
-			local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("gayai")
-			local frame = screenGui:WaitForChild("key")
-	
-			-- Function to make the frame visible
-			local function showgyat()
-				frame.Visible = false
-			end
-	
-			-- Example: Trigger the function after 2 seconds
-			wait(0.1)
-			showgyat()
-	
-	
-	    else
-	        print("The text does not match.")
-	    end
-	    task.wait(1) -- Check every second
-	end
-	
-	
-end
-coroutine.wrap(FLRMZ_fake_script)()
